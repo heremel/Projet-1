@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {align-items: flex-start;
+    font-family : "Montserrat", sans-serif;
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: #FABF51;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+
+.button-generate {
+    background-color: #4F4537;
+    color : whitesmoke;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.see-memes {
+    background-color: #B6A999;
+    padding-left: 5px;
+    display: flex;
+    
+}
+
+.memes {
+    background-color: #4F4537;
+}
+footer {
+    background-color: #FABF51;
+
+}
+
+
