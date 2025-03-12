@@ -17,7 +17,7 @@ body {
     font-family : "Montserrat", sans-serif;
     background-color: var(--text-color);
 }
-
+ 
 nav {
     background-color: var(--nav-and-footer-color);
     display: flex;
@@ -69,11 +69,14 @@ input {
 
 footer {
     background-color: var(--nav-and-footer-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-left: 5px;
     padding-right: 5px;
-    
 }
 
 .memes{
