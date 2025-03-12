@@ -5,6 +5,7 @@
     --window-color: #B6A999;
     --text-color: whitesmoke;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +35,11 @@ main {
     padding-top: 20px;
 }
 
+input {
+    height: 200px;
+    margin-bottom: 10px;  
+}
+
 .button-generate {
     background-color: var(--btn-color);
     color : whitesmoke;
@@ -42,24 +48,38 @@ main {
     margin-bottom: 20px;
 }
 
+
 .see-meme-button {
     background-color: var(--btn-color);
     color: var(--text-color);
     display: flex;
     margin-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.memes {
+    background-color: #4F4537;
 }
 
 footer {
     background-color: var(--nav-and-footer-color);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    
 }
 
 .memes{
     width: 87%;
 }
+
 .download-button{
     width: 35px;
 }
-.test{
+
+.download-button-position {
     width: 100%;
     display: flex;
     justify-content: flex-end;
