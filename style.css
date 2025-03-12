@@ -4,6 +4,7 @@
     --btn-color: #4F4537;
     --window-color: #B6A999;
     --text-color: whitesmoke;
+    --btn-hover-color:  rgb(112, 100, 83);
 }
 
 * {
@@ -14,7 +15,7 @@
 
 body {
     font-family : "Montserrat", sans-serif;
-    background-color: whitesmoke;
+    background-color: var(--text-color);
 }
 
 nav {
@@ -42,10 +43,12 @@ input {
 
 .button-generate {
     background-color: var(--btn-color);
-    color : whitesmoke;
+    color : var(--text-color);
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 8px;
+    border-style: none;
 }
 
 
@@ -60,6 +63,9 @@ input {
 
 .memes {
     background-color: #4F4537;
+    padding: 8px;
+    border-radius: 5px;
+    border-style: none;
 }
 
 footer {
@@ -72,7 +78,16 @@ footer {
 }
 
 .memes{
-    width: 87%;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.memes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    max-width: 100%;
 }
 
 .download-button{
@@ -85,4 +100,12 @@ footer {
     justify-content: flex-end;
     padding-right: 27px;
     padding-top: 5px;
+}
+nav h1{
+    padding-top: 10px;
+    padding-right: 3px;
+}
+button:hover{
+    cursor:pointer;
+    background-color: var(--btn-hover-color);
 }
