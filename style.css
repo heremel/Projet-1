@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+:root{
+    --nav-and-footer-color: #FABF51;
+    --btn-color: #4F4537;
+    --window-color: #B6A999;
+    --text-color: whitesmoke;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {align-items: flex-start;
+body {
     font-family : "Montserrat", sans-serif;
     background-color: whitesmoke;
 }
 
 nav {
-    background-color: #FABF51;
+    background-color: var(--nav-and-footer-color);
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding-right: 5px;
 }
 
@@ -31,26 +35,34 @@ main {
 }
 
 .button-generate {
-    background-color: #4F4537;
+    background-color: var(--btn-color);
     color : whitesmoke;
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.see-memes {
-    background-color: #B6A999;
-    padding-left: 5px;
+.see-meme-button {
+    background-color: var(--btn-color);
+    color: var(--text-color);
     display: flex;
-    
+    margin-left: 10px;
 }
 
-.memes {
-    background-color: #4F4537;
-}
 footer {
-    background-color: #FABF51;
-
+    background-color: var(--nav-and-footer-color);
 }
 
-
+.memes{
+    width: 87%;
+}
+.download-button{
+    width: 35px;
+}
+.test{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 27px;
+    padding-top: 5px;
+}
