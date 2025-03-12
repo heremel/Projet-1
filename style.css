@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body {align-items: flex-start;
+body {
     font-family : "Montserrat", sans-serif;
     background-color: whitesmoke;
 }
@@ -48,6 +48,7 @@ main {
 .memes {
     background-color: #4F4537;
 }
+
 footer {
     background-color: #FABF51;
 
