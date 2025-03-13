@@ -20,6 +20,4 @@ let button = document.querySelector('.button-generate');
     }, 1500);
 }
 
-document.getElementById('texte-area').addEventListener('input', function() {
-    document.getElementById('meme-text').innerText = this.value;
-});
+

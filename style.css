@@ -121,16 +121,5 @@ button:hover{
 
 }
 
-.meme-text {
-    
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    font-size: 24px;
-    font-family: Impact, sans-serif;
-    text-shadow: 2px 2px black;
-    pointer-events: none; 
-}
-    
+
 
