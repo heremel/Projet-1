@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-:root{
+
+:root {
     --nav-and-footer-color: #FABF51;
     --btn-color: #4F4537;
     --window-color: #B6A999;
     --text-color: whitesmoke;
-    --btn-hover-color:  rgb(112, 100, 83);
+    --btn-hover-color: rgb(112, 100, 83);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@
 }
 
 body {
-    font-family : "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: var(--text-color);
 }
 
@@ -35,9 +37,14 @@ main {
     padding-top: 20px;
 }
 
+input {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
 .button-generate {
     background-color: var(--btn-color);
-    color : var(--text-color);
+    color: var(--text-color);
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -45,47 +52,68 @@ main {
     border-style: none;
 }
 
+
 .see-meme-button {
     background-color: var(--btn-color);
     color: var(--text-color);
     display: flex;
     margin-left: 10px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+}
+
+.memes {
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 3px;
     border-style: none;
-}
-
-footer {
-    background-color: var(--nav-and-footer-color);
-}
-
-.memes{
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
+
+footer {
+    background-color: var(--nav-and-footer-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 .memes-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 250px;
     max-width: 100%;
 }
-.download-button{
+
+
+.download-button {
     width: 35px;
+    
 }
-.test{
-    width: 100%;
+
+.download-button-position {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 27px;
-    padding-top: 5px;
+    align-self: flex-end;
+    padding-right: 57px;
 }
-nav h1{
+
+nav h1 {
     padding-top: 10px;
     padding-right: 3px;
 }
-button:hover{
-    cursor:pointer;
+
+button:hover {
+    cursor: pointer;
     background-color: var(--btn-hover-color);
+}
+
+.social-media-logo {
+    margin-top: 3px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
 	<link rel="stylesheet" href="media.css">
 	<title>Générateur de Meme | P1</title>
 </head>
+
 <body>
 	<nav>
 		<img src="images/logo.png" alt="logo" class="logo">
@@ -15,32 +17,44 @@
 	</nav>
 	<header>
 		<main>
-			<button onclick="randomImg1()" class ="button-generate">Click to Generate</button>
+			<button onclick="randomImg1()" class="button-generate">Click to Generate</button>
 			<div id="imageContainer" class="memes-container">
-			<img src="memes/image1.png" alt="memes" class="memes">
+				<img src="memes/image1.png" alt="memes" class="memes">
 			</div>
-			<div class="test">
-			<a href="memes/Amazed cat .png" download="YourMeme"><img src="images/download-button.png" class="download-button"></a>
+				<div class="download-button-position"
+				<a href="memes/Amazed cat .png" download="YourMeme"><img src="images/download-button.png"
+						class="download-button"></a>
 			</div>
+			<img id="memeImage" src="images/mon_image.jpg" alt="">
+			<div class="meme-text" id="memeTextDisplay">
+			</div>
+			<input type="text" id="memeTextInput" placeholder="Entrez votre texte">
 		</main>
 		<section class="see-memes">
 			<button class="see-meme-button">See your memes</button>
 		</section>
 	</header>
 	<footer>
-	<div class="robin">
-		<h6>
-			Robin DUYTSHAEVER
-		</h6>
-		<!-- image linkedin et github -->
-	</div>
-	<div class="melissa">
-		<h6>
-			Mélissa FERREIRA
-		</h6>
-		<!-- image linkedin et github -->
-	</div>
+		<div class="robin">
+			<h6>
+				Robin DUYTSHAEVER
+			</h6>
+			<div class="social-media-logo">
+				<a href="https://github.com/KiruaZoldic"> <img src="images/logo-github.png" alt="logo" class="logo"></a>
+				<a href="https://www.linkedin.com/in/robin-duytschaever-857b9b352/"> <img src="images/logo-linkedin.png" alt="logo" class="logo"></a>
+			</div>
+		</div>
+		<div class="melissa">
+			<h6>
+				Mélissa FERREIRA
+			</h6>
+			<div class="social-media-logo">
+				<a href="https://github.com/heremel"><img src="images/logo-github.png" alt="logo" class="logo"></a>
+				<a href="https://www.linkedin.com/in/mélissa-ferreira-61a84b286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <img src="images/logo-linkedin.png" alt="logo" class="logo"></a>
+			</div>
+		</div>
 	</footer>
 	<script src="script.js"></script>
 </body>
+
 </html>
