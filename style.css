@@ -86,12 +86,14 @@ footer {
 }
 
 .memes-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    max-width: 100%;
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        max-width: 100%;
 }
+
 
 .download-button{
     width: 35px;
@@ -113,3 +115,22 @@ button:hover{
     cursor:pointer;
     background-color: var(--btn-hover-color);
 }
+
+.social-media-logo {
+    margin-top: 3px;
+
+}
+
+.meme-text {
+    
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: Impact, sans-serif;
+    text-shadow: 2px 2px black;
+    pointer-events: none; 
+}
+    
+

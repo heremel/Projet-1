@@ -19,3 +19,7 @@ let button = document.querySelector('.button-generate');
         button.disabled = false; // Réactive le bouton
     }, 1500);
 }
+
+document.getElementById('texte-area').addEventListener('input', function() {
+    document.getElementById('meme-text').innerText = this.value;
+});
