@@ -19,12 +19,13 @@
 		<main>
 			<button onclick="randomImg1()" class ="button-generate">Click to Generate</button>
 			<div id="imageContainer" class="memes-container">
-			<img src="memes/image1.png" alt="memes" class="memes">
+				<canvas id="memeCanvas" width="400" height="300"></canvas>
 			</div>
 			<div class="test">
-			<a href="memes/Amazed cat .png" download="YourMeme"><img src="images/download-button.png" class="download-button"></a>
+			<button id="downloadButton"><img src="images/download-button.png"class="download-button"></button>
 			</div>
 			<input type="text" id="texte-area" class="input-field" placeholder="Tap your text here"></input>
+			<p id="values" class="meme-text"></p>
 		</main>
 		<section class="see-memes">
 			<button class="see-meme-button">See your memes</button>
