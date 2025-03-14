@@ -6,41 +6,34 @@
     --text-color: whitesmoke;
     --btn-hover-color:  rgb(112, 100, 83);
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family : "Montserrat", sans-serif;
     background-color: var(--text-color);
 }
-
 nav {
     background-color: var(--nav-and-footer-color);
     display: flex;
     justify-content: space-between;
     padding-right: 5px;
 }
-
 .logo {
     width: 50px;
 }
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
 }
-
 input {
     height: 200px;
     margin-bottom: 10px;  
 }
-
 .button-generate {
     background-color: var(--btn-color);
     color : var(--text-color);
@@ -50,8 +43,6 @@ input {
     padding: 8px;
     border-style: none;
 }
-
-
 .see-meme-button {
     background-color: var(--btn-color);
     color: var(--text-color);
@@ -62,11 +53,9 @@ input {
     border-style: none;
     margin-bottom: 5px;
 }
-
 .memes {
     background-color: var(--btn-color);
 }
-
 footer {
     background-color: var(--nav-and-footer-color);
     display: flex;
@@ -75,7 +64,6 @@ footer {
     padding-right: 5px;
     
 }
-
 .memes{
     width: 100%;
     height: 250px;
@@ -88,11 +76,9 @@ footer {
     height: 250px;
     max-width: 100%;
 }
-
 .download-button{
     width: 35px;
 }
-
 .download-button-position {
     width: 100%;
     display: flex;
