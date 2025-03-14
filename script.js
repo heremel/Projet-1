@@ -38,7 +38,7 @@ function randomImgs() {
     let button = document.querySelector('.button-generate');
     button.disabled = true;
 
-    setTimeout(function() {
+    setTimeout(() => {
         button.disabled = false;
     }, 1500);
 }
