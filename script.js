@@ -1,3 +1,4 @@
+
 const canvas = document.getElementById('memeCanvas');
 const ctx = canvas.getContext('2d');
 let image = new Image();  // Garder une référence à l'image
@@ -27,15 +28,16 @@ document.getElementById('texte-area').addEventListener('input', function() {
 function randomImgs() {
     const myImages = [];
     const numberOfImages = 42;
-    for (let i = 1; i <= numberOfImages; i++) {
-        myImages.push(`memes/image${i}.png`);
+    for (let i = 0; i <= numberOfImages; i++) {
+        myImages.push(`assets/memes/image${i}.png`);
     }
 
     let rnd = Math.floor(Math.random() * myImages.length);
-
+    console.log(myImages[rnd]);
+    console.log(rnd);
     updateImageOnCanvas(myImages[rnd]);
 
-    let button = document.querySelector('.button-generate');
+    let button = document.querySelector('.img-button');
     button.disabled = true;
 
     setTimeout(() => {
@@ -57,6 +59,50 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     // Créer un lien pour télécharger l'image avec le texte
     const link = document.createElement('a');
     link.download = 'meme.png';
-    link.href = canvas.toDataURL('image/png'); // Générer l'image avec le texte
+    link.href = canvas.toDataURL('assets/image/png'); // Générer l'image avec le texte
     link.click();
 });
+
+// document.addEventListener('DOMContentLoaded', (event) => {
+
+//     function handleDragStart(e) {
+//       this.style.opacity = '0.4';
+//     }
+  
+//     function handleDragEnd(e) {
+//       this.style.opacity = '1';
+  
+//       items.forEach(function (item) {
+//         item.classList.remove('over');
+//       });
+//     }
+  
+//     function handleDragOver(e) {
+//       e.preventDefault();
+//       return false;
+//     }
+  
+//     function handleDragEnter(e) {
+//       this.classList.add('over');
+//     }
+  
+//     function handleDragLeave(e) {
+//       this.classList.remove('over');
+//     }
+  
+//     let items = document.querySelectorAll('.meow');
+//     items.forEach(function(item) {
+//       item.addEventListener('dragstart', handleDragStart);
+//       item.addEventListener('dragover', handleDragOver);
+//       item.addEventListener('dragenter', handleDragEnter);
+//       item.addEventListener('dragleave', handleDragLeave);
+//       item.addEventListener('dragend', handleDragEnd);
+//       item.addEventListener('drop', handleDrop);
+//     });
+//   });
+  
+//   function handleDrop(e) {
+//     e.stopPropagation(); // stops the browser from redirecting.
+//     return false;
+//   }
+randomImgs();

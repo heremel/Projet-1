@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'myFont';
+    src: url('assets/fonts/myFont.ttf') format('truetype');
+}
 :root{
-    --nav-and-footer-color: #FABF51;
+    --nav-and-footer-color: rgb(94, 182, 94);
     --btn-color: #4F4537;
     --window-color: #B6A999;
     --text-color: whitesmoke;
@@ -11,15 +15,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
-    font-family : "Montserrat", sans-serif;
-    background-color: var(--text-color);
+    background-color: rgb(190, 240, 190);
+    font-family: 'myFont', sans-serif;
+    color: white;
+    -webkit-text-stroke: .8px #728657;
+    min-height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 nav {
-    background-color: var(--nav-and-footer-color);
+    background-image: url('assets/images/GUACCAMEME.svg');
     display: flex;
     justify-content: space-between;
     padding-right: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
 }
 .logo {
     width: 50px;
@@ -34,34 +53,34 @@ input {
     height: 200px;
     margin-bottom: 10px;  
 }
-.button-generate {
-    background-color: var(--btn-color);
-    color : var(--text-color);
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 8px;
+.img-button{
+    width: 250px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.button-generate{
     border-style: none;
+    background-color: transparent;
 }
 .see-meme-button {
-    background-color: var(--btn-color);
-    color: var(--text-color);
     display: flex;
-    margin-left: 10px;
-    padding: 8px;
-    border-radius: 5px;
     border-style: none;
-    margin-bottom: 5px;
+    background-color: transparent;
 }
 .memes {
     background-color: var(--btn-color);
 }
 footer {
-    background-color: var(--nav-and-footer-color);
+    background-image: url('assets/images/footerguacca.svg');
     display: flex;
     justify-content: space-between;
     padding-left: 5px;
     padding-right: 5px;
+    height: 75px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 .memes{
@@ -86,11 +105,23 @@ footer {
     padding-right: 27px;
     padding-top: 5px;
 }
-nav h1{
-    padding-top: 10px;
-    padding-right: 3px;
-}
-button:hover{
+/* button:hover{
     cursor:pointer;
     background-color: var(--btn-hover-color);
+} */
+h6{
+    font-size: 25px;
+}
+#downloadButton{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+.other-buttons{
+    width: 250px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    background-color: transparent;
 }
