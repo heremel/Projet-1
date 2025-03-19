@@ -54,14 +54,15 @@ input {
     margin-bottom: 10px;  
 }
 .img-button{
-    width: 250px;
+    width: 300px;
     cursor: pointer;
     background: none;
     border: none;
 }
 .button-generate{
     border-style: none;
-    background-color: transparent;
+    background: url("assets/images/generatebutton.svg");
+    margin-bottom: 50px;
 }
 .see-meme-button {
     display: flex;
@@ -110,7 +111,7 @@ footer {
     background-color: var(--btn-hover-color);
 } */
 h6{
-    font-size: 25px;
+    font-size: 24px;
 }
 #downloadButton{
     border-style: none;
