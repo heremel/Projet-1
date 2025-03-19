@@ -97,19 +97,13 @@ footer {
     max-width: 100%;
 }
 .download-button{
+    display: flex;
     width: 35px;
 }
-.download-button-position {
-    width: 100%;
+.test{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 27px;
-    padding-top: 5px;
+    flex-direction: flex-end;
 }
-/* button:hover{
-    cursor:pointer;
-    background-color: var(--btn-hover-color);
-} */
 h6{
     font-size: 24px;
 }
@@ -120,11 +114,12 @@ h6{
     border: none;
 }
 .other-buttons{
-    width: 250px;
+    width: 150px;
     cursor: pointer;
     background: none;
     border: none;
     background-color: transparent;
+    padding-left: 8px;
 }
 .github-logo{
     width: 40px;
