@@ -27,8 +27,8 @@ document.getElementById('texte-area').addEventListener('input', function() {
 // Fonction pour générer une image aléatoire
 function randomImgs() {
     const myImages = [];
-    const numberOfImages = 42;
-    for (let i = 0; i <= numberOfImages; i++) {
+    const numberOfImages = 41;
+    for (let i = 1; i <= numberOfImages; i++) {
         myImages.push(`assets/memes/image${i}.png`);
     }
 
