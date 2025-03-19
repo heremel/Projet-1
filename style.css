@@ -139,3 +139,34 @@ h6{
     display: flex;
     justify-content: space-evenly;
 }
+
+#addTextButton {
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'myFont', sans-serif;
+    font-size: 25px;
+    color: var(--btn-color);
+    -webkit-text-stroke: .8px #728657;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#addTextButton:hover {
+    background-color: var(--btn-hover-color);
+    color: var(--text-color);
+    transform: scale(1.05);
+}
+
+.text-zone {
+    position: absolute;
+    border: 2px dashed #4F4537;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding: 5px 10px;
+    cursor: move;
+    min-width: 100px;
+    min-height: 40px;
+    font-family: 'myFont', sans-serif;
+    font-size: 20px;
+    -webkit-text-stroke: 0.8px #728657;
+}
