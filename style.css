@@ -125,3 +125,17 @@ h6{
     border: none;
     background-color: transparent;
 }
+.github-logo{
+    width: 40px;
+}
+.linkedin-logo{
+    width: 40px;
+}
+.link-container-mel{
+    display: flex;
+    justify-content: space-evenly;
+}
+.link-container-rob{
+    display: flex;
+    justify-content: space-evenly;
+}
