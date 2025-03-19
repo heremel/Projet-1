@@ -13,17 +13,6 @@ function updateImageOnCanvas(imagePath) {
     };
 }
 
-// Fonction d'ajout du texte
-document.getElementById('texte-area').addEventListener('input', function() {
-    // Efface et redessine l'image et le texte sur le canvas à chaque fois que le texte change
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Efface le canvas
-    ctx.drawImage(image, 0, 0, canvas.width, canvas.height); // Redessine l'image
-    ctx.font = '24px Impact';
-    ctx.fillStyle = 'white';
-    ctx.textAlign = 'center';
-    ctx.fillText(this.value, canvas.width / 2, canvas.height - 20); // Ajoute le texte
-});
-
 // Fonction pour générer une image aléatoire
 function randomImgs() {
     const myImages = [];
@@ -33,8 +22,6 @@ function randomImgs() {
     }
 
     let rnd = Math.floor(Math.random() * myImages.length);
-    console.log(myImages[rnd]);
-    console.log(rnd);
     updateImageOnCanvas(myImages[rnd]);
 
     let button = document.querySelector('.img-button');
@@ -63,46 +50,13 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     link.click();
 });
 
-// document.addEventListener('DOMContentLoaded', (event) => {
-
-//     function handleDragStart(e) {
-//       this.style.opacity = '0.4';
-//     }
-  
-//     function handleDragEnd(e) {
-//       this.style.opacity = '1';
-  
-//       items.forEach(function (item) {
-//         item.classList.remove('over');
-//       });
-//     }
-  
-//     function handleDragOver(e) {
-//       e.preventDefault();
-//       return false;
-//     }
-  
-//     function handleDragEnter(e) {
-//       this.classList.add('over');
-//     }
-  
-//     function handleDragLeave(e) {
-//       this.classList.remove('over');
-//     }
-  
-//     let items = document.querySelectorAll('.meow');
-//     items.forEach(function(item) {
-//       item.addEventListener('dragstart', handleDragStart);
-//       item.addEventListener('dragover', handleDragOver);
-//       item.addEventListener('dragenter', handleDragEnter);
-//       item.addEventListener('dragleave', handleDragLeave);
-//       item.addEventListener('dragend', handleDragEnd);
-//       item.addEventListener('drop', handleDrop);
-//     });
-//   });
-  
-//   function handleDrop(e) {
-//     e.stopPropagation(); // stops the browser from redirecting.
-//     return false;
-//   }
 randomImgs();
+
+const popUp = document.querySelector(".windowPopUp")
+function windowPopUpFunc(){
+    popUp.style.display = "flex";
+}
+
+function windowPopUpCloseFunc(){
+    popUp.style.display = "none";
+}
