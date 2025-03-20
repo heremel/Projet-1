@@ -32,15 +32,17 @@ body {
 nav {
     background-image: url('assets/images/GUACCAMEME.svg');
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-right: 5px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100px;
+    height: 200px;
+    width: 100%;
 }
 .logo {
     width: 50px;
+
 }
 main {
     display: flex;
@@ -56,6 +58,11 @@ input {
     cursor: pointer;
     background: none;
     border: none;
+    transition: all .2s ease-in-out;
+}
+.button-generate:disabled .img-button{
+    cursor: not-allowed;
+    filter: grayscale(80%);
 }
 .button-generate{
     border-style: none;

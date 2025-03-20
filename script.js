@@ -1,11 +1,15 @@
-
+import { numberOfImages } from './data.js';
+const popUp = document.querySelector(".windowPopUp")
 const canvas = document.getElementById('memeCanvas');
 const ctx = canvas.getContext('2d');
 let image = new Image();  // Garder une référence à l'image
+
+
 let currentImagePath = '';  // Pour garder la trace de l'image actuelle
 
 // Fonction pour mettre à jour l'image sur le canvas
 function updateImageOnCanvas(imagePath) {
+    image.src = '';
     image.src = imagePath;
     image.onload = function() {
         ctx.clearRect(0, 0, canvas.width, canvas.height); // Effacer le canvas
@@ -15,20 +19,15 @@ function updateImageOnCanvas(imagePath) {
 
 // Fonction pour générer une image aléatoire
 function randomImgs() {
-    const myImages = [];
-    const numberOfImages = 41;
-    for (let i = 1; i <= numberOfImages; i++) {
-        myImages.push(`assets/memes/image${i}.png`);
-    }
+    let rnd = Math.floor(Math.random() * numberOfImages.length);
+    updateImageOnCanvas(numberOfImages[rnd]);
 
-    let rnd = Math.floor(Math.random() * myImages.length);
-    updateImageOnCanvas(myImages[rnd]);
-
-    let button = document.querySelector('.img-button');
+    let button = document.querySelector('.button-generate');
     button.disabled = true;
 
     setTimeout(() => {
         button.disabled = false;
+        button.style.cursor = "not-allowed";
     }, 1500);
 }
 
@@ -50,9 +49,6 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     link.click();
 });
 
-randomImgs();
-
-const popUp = document.querySelector(".windowPopUp")
 function windowPopUpFunc(){
     popUp.style.display = "flex";
 }
@@ -60,3 +56,9 @@ function windowPopUpFunc(){
 function windowPopUpCloseFunc(){
     popUp.style.display = "none";
 }
+
+const buttonG = document.querySelector('.button-generate')
+buttonG.addEventListener('click', () => {
+    randomImgs()
+})
+randomImgs();
