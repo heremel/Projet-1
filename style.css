@@ -159,8 +159,8 @@ h6{
 
 .text-zone {
     position: absolute;
-    border: 2px dashed #4F4537;
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px dashed #f5f4f3;
+    background-color: transparent;
     color: black;
     padding: 5px 10px;
     cursor: move;
@@ -168,5 +168,55 @@ h6{
     min-height: 40px;
     font-family: 'myFont', sans-serif;
     font-size: 20px;
-    -webkit-text-stroke: 0.8px #728657;
+    z-index: 10;
 }
+
+.text-zone:focus {
+    outline: none; /* Supprime la bordure rouge au focus */
+}
+
+.format-menu {
+    position: absolute;
+    display: none;
+    background-color: rgb(111, 210, 147);
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: #4F4537 2px 2px 5px;
+}
+
+.format-menu button {
+    background: none;
+    border: none;
+    margin: 0 5px;
+    color: var(--btn-color);
+    cursor: pointer;
+    font-family: 'myFont', sans-serif;
+}
+
+.format-menu button:hover {
+    color: rgb(94, 182, 94);
+}
+
+.format-menu input[type="color"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+}
+
+.format-menu select {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid rgb(111, 210, 147);
+    padding-top: 1px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    width: auto;
+    height: 23px;
+    cursor: pointer;
+}
+

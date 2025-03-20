@@ -14,20 +14,40 @@
 	<nav>
 		<img src="assets/images/LogoGuaccameme.svg" alt="logo" class="logo">
 	</nav>
-		<main>
-			<button onclick="randomImgs()" class ="button-generate"><img src="assets/images/generatebutton.svg" class="img-button"></button>
-			<button id="addTextButton" class="button-generate">Ajouter du texte</button>
-			<div id="imageContainer" class="memes-container">
-				<canvas id="memeCanvas" width="400" height="300"></canvas>
+	<main>
+		<button onclick="randomImgs()" class="button-generate"><img src="assets/images/generatebutton.svg"
+				class="img-button"></button>
+		<button id="addTextButton" class="button-generate">Ajouter du texte</button>
+		<div id="formatMenu" class="format-menu">
+			<button data-cmd="bold">Gras</button>
+			<button data-cmd="italic">Italique</button>
+			<button data-cmd="underline">Souligné</button>
+			<div class="color-picker">
+				<input type="color" id="colorPicker" title="Changer la couleur">
 			</div>
-			<div class="test">
-			<button id="downloadButton"><img src="assets/images/download-button.png"class="download-button"></button>
-			</div>
-			</div>
-		</main>
-		<section class="see-memes">
-			<button class="see-meme-button"><img src="assets/images/seememesbutton.svg" class="other-buttons"></button>
-		</section>
+			<select id="fontSizeSelector" title="Taille du texte">
+				<option value="8">8</option>
+				<option value="10">10</option>
+				<option value="12">12</option>
+				<option value="14">14</option>
+				<option value="16">16</option>
+				<option value="20">20</option>
+				<option value="24">24</option>
+				<option value="28">28</option>
+				<option value="32">32</option>
+				<option value="40">40</option>
+			</select>
+		</div>
+		<div id="imageContainer" class="memes-container">
+			<canvas id="memeCanvas" width="400" height="300"></canvas>
+		</div>
+		<div class="test">
+			<button id="downloadButton"><img src="assets/images/download-button.png" class="download-button"></button>
+		</div>
+		</div>
+	</main>
+	<button class="see-meme-button" id="seeMemesButton"><img src="assets/images/seememesbutton.svg"
+			class="other-buttons"></button>
 	<footer>
 		<div class="robin">
 			<h6>
