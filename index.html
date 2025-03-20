@@ -7,12 +7,12 @@
 	<link rel="icon" type="images/png" href="assets/images/Guacca.ico">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="media.css">
-	<title>Générateur de Meme | P1</title>
+	<title>Guaccameme</title>
 </head>
 
 <body>
 	<nav>
-		<img src="assets/images/LogoGuaccameme.svg" alt="logo" class="logo">
+		<img src="assets/images/LogoGuaccameme.png" alt="logo" class="logo">
 	</nav>
 	<main>
 		<button onclick="randomImgs()" class="button-generate"><img src="assets/images/generatebutton.svg"
@@ -48,27 +48,42 @@
 	</main>
 	<button class="see-meme-button" id="seeMemesButton"><img src="assets/images/seememesbutton.svg"
 			class="other-buttons"></button>
+		<button class ="button-generate"><img src="assets/images/buttoncorrigee.png" class="img-button"></button>
+		<div id="imageContainer" class="memes-container">
+			<canvas id="memeCanvas" width="400" height="300"></canvas>
+		</div>
+		<div class="dlbutton">
+			<button id="downloadButton"><img src="assets/images/download-button.png"class="download-button"></button>
+		</div>
+	</main>
+	<div>
+	<article class="windowPopUp">
+		<p>Meme 1</p>
+		<p>Meme 2</p>
+		<p>Meme 3</p>
+		<button class="close-button" ><img src="assets/images/closebutton.png" class="close-button-img"></button>
+	</article>
+	<div class="see-memes">
+		<button class="see-meme-button"><img src="assets/images/seeurmemes.png" class="other-buttons"></button>
+	</div>
+	</div>
 	<footer>
 		<div class="robin">
-			<h6>
-				Robin DUYTSHAEVER
-			</h6>
+			<p>Robin DUYTSHAEVER</p>
 			<div class="link-container-rob">
 			 <a target="_blank" href="https://github.com/KiruaZoldic"><img src="assets/images/output-onlinepngtools.png" alt="github-logo" class="github-logo"></a>
 			 <a target="_blank" href="https://www.linkedin.com/in/robin-duytschaever-857b9b352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="assets/images/linkedinlogo.png" alt="linkedin-logo" class="linkedin-logo"></a>
 			</div>
 		</div>
 		<div class="melissa">
-			<h6>
-				Mélissa FERREIRA
-			</h6>
+			<p>Mélissa FERREIRA</p>
 			<div class="link-container-mel">
 			 <a target="_blank" href="https://github.com/heremel"><img src="assets/images/output-onlinepngtools.png" alt="github-logo" class="github-logo"></a>
 			 <a target="_blank" href="https://www.linkedin.com/in/m%C3%A9lissa-ferreira-61a84b286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="assets/images/linkedinlogo.png" alt = "linkedin-logo" class="linkedin-logo"></a>
 			</div>
 		</div>
 	</footer>
-	<script src="script.js"></script>
+	<script type="module" src="script.js"></script>
 </body>
 
 </html>
