@@ -2,9 +2,10 @@ import { numberOfImages } from './data.js';
 const popUp = document.querySelector(".windowPopUp")
 const canvas = document.getElementById('memeCanvas');
 const ctx = canvas.getContext('2d');
+const openPopUp = document.querySelector('.see-meme-button');
+const closePopUp = document.querySelector('.close-button');
+const buttonG = document.querySelector('.button-generate');
 let image = new Image();  // Garder une référence à l'image
-
-
 let currentImagePath = '';  // Pour garder la trace de l'image actuelle
 
 // Fonction pour mettre à jour l'image sur le canvas
@@ -57,8 +58,15 @@ function windowPopUpCloseFunc(){
     popUp.style.display = "none";
 }
 
-const buttonG = document.querySelector('.button-generate')
 buttonG.addEventListener('click', () => {
     randomImgs()
+})
+
+openPopUp.addEventListener('click', () =>{
+    windowPopUpFunc();
+})
+
+closePopUp.addEventListener('click', () =>{
+    windowPopUpCloseFunc();
 })
 randomImgs();
