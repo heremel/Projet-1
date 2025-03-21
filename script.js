@@ -224,7 +224,7 @@ function addTextOnImage() {
   textZone.innerText = "Votre texte";
   textZone.style.position = "absolute";
   textZone.style.fontSize = "24px";
-  textZone.style.color = "white";
+  textZone.style.color = "black";
   textZone.style.fontFamily = "sans-serif";
   textZone.style.textAlign = "center";
   textZone.style.background = "transparent";
