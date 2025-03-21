@@ -9,7 +9,8 @@
   --text-outline: #728657;
   --popUp-color: rgb(111, 210, 147);
   --boxshadow: #4f4537 2px 2px 5px;
-  --textcolor: black;
+  --textcolor: #333;
+  --input-color: rgba(255, 255, 255, 0.7);
 }
 * {
   margin: 0;
@@ -76,7 +77,7 @@ input {
 }
 .see-meme-button {
   position: absolute;
-  bottom: 90px; /* Ajuste selon la hauteur de ton footer */
+  bottom: 90px;
   left: 20px;
   border-style: none;
   background-color: transparent;
@@ -245,9 +246,10 @@ footer p {
   top: 50px; /* Tu pourras ajuster la position */
   left: 50px;
   font-size: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #728657;
+  background: var(--input-color);
+  border: 1px solid var(--text-outline);
   padding: 5px;
   font-family: "myFont", sans-serif;
-  color: #333;
+  color: var(--textcolor);
+  src: url("assets/fonts/myFont.ttf") format("truetype");
 }
