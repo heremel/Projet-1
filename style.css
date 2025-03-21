@@ -1,165 +1,253 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
-    font-family: 'myFont';
-    src: url('assets/fonts/myFont.ttf') format('truetype');
+  font-family: "myFont";
+  src: url("assets/fonts/myFont.ttf") format("truetype");
 }
-:root{
-    --white: whitesmoke;
-    --body-background: rgb(190, 240, 190);
-    --text-outline: #728657;
-    --popUp-color: rgb(111, 210, 147);
+:root {
+  --white: whitesmoke;
+  --body-background: rgb(190, 240, 190);
+  --text-outline: #728657;
+  --popUp-color: rgb(111, 210, 147);
+  --boxshadow: #4f4537 2px 2px 5px;
+  --textcolor: black;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body{
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background-color: var(--body-background);
-    font-family: 'myFont', sans-serif;
-    color: var(--white);
-    min-height: 100vh;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  background-color: var(--body-background);
+  font-family: "myFont", sans-serif;
+  color: var(--white);
+  min-height: 100vh;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 nav {
-    background-image: url('assets/images/GUACCAMEME.svg');
-    display: flex;
-    justify-content: flex-start;
-    padding-right: 5px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100px;
+  background-image: url("assets/images/GUACCAMEME.svg");
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
 }
 .logo {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 input {
-    height: 200px;
-    margin-bottom: 10px;  
+  height: 200px;
+  margin-bottom: 10px;
 }
-.img-button{
-    width: 300px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    transition: all .2s ease-in-out;
+.img-button {
+  width: 300px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
 }
-.button-generate:disabled .img-button{
-    cursor: not-allowed;
-    filter: grayscale(80%);
+.button-generate:disabled .img-button {
+  cursor: not-allowed;
+  filter: grayscale(80%);
 }
-.button-generate{
-    border-style: none;
-    background: url("assets/images/generatebutton.svg");
-    margin-bottom: 50px;
+.button-generate {
+  border: none;
+  background: url("assets/images/generatebutton.svg");
+  margin-bottom: 30px 0;
+  align-self: center;
 }
 .see-meme-button {
-    display: flex;
-    border-style: none;
-    background-color: transparent;
+  position: absolute;
+  bottom: 90px; /* Ajuste selon la hauteur de ton footer */
+  left: 20px;
+  border-style: none;
+  background-color: transparent;
 }
 footer {
-    background-image: url('assets/images/footerguacca.svg');
-    display: flex;
-    justify-content: space-between;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 75px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+  background-image: url("assets/images/footerguacca.svg");
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 75px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.memes{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.memes {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 .memes-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
 }
-.download-button{
-    display: flex;
-    width: 35px;
+.download-button {
+  display: flex;
+  width: 35px;
 }
-footer p{
-    font-size: 24px;
-    -webkit-text-stroke: .9px var(--text-outline);
+footer p {
+  font-size: 24px;
+  -webkit-text-stroke: 0.9px var(--text-outline);
 }
-#downloadButton{
-    border-style: none;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
+#downloadButton {
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-style: none;
 }
-.other-buttons{
-    width: 150px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    background-color: transparent;
-    padding-left: 8px;
-    margin-top: 200px;
+.other-buttons {
+  width: 150px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  background-color: transparent;
+  padding-left: 8px;
 }
-.github-logo{
-    width: 40px;
+.github-logo {
+  width: 40px;
 }
-.linkedin-logo{
-    width: 40px;
+.linkedin-logo {
+  width: 40px;
 }
-.link-container-mel{
-    display: flex;
-    justify-content: space-evenly;
+.link-container-mel {
+  display: flex;
+  justify-content: space-evenly;
 }
-.link-container-rob{
-    display: flex;
-    justify-content: space-evenly;
+.link-container-rob {
+  display: flex;
+  justify-content: space-evenly;
 }
-.windowPopUp{
-    bottom: 0;
-    background-color: var(--popUp-color);
-    display: none;
-    flex-direction: column;
-    width: 96%;
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    bottom: 17%;
-    height: 50%;
-    margin-left: 8px;
-    justify-content: space-evenly;
+
+.addText-Button {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
-.close-button-img{
-    width: 50px;
+
+.addText-Button:hover {
+  background-color: var(--btn-hover-color);
+  color: var(--text-color);
+  transform: scale(1.05);
 }
-.close-button{
-    background: transparent;
-    border: none;
+
+.text-zone {
+  border: 2px dashed var(--white);
+  background-color: transparent;
+  color: var(--textcolor);
+  padding: 5px 10px;
+  cursor: move;
+  min-width: 100px;
+  min-height: 40px;
+  font-family: "myFont", sans-serif;
+  font-size: 20px;
+  z-index: 10;
 }
-.dlbutton{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-right: 15px;
-    margin-top: 10px;
+
+.text-zone:focus {
+  outline: none; /* Supprime la bordure rouge au focus */
+}
+
+.format-menu {
+  position: absolute;
+  display: none;
+  background-color: var(--popUp-color);
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: var(--boxshadow);
+}
+
+.format-menu button {
+  background: none;
+  border: none;
+  margin: 0 5px;
+  color: var(--btn-color);
+  cursor: pointer;
+  font-family: "myFont", sans-serif;
+}
+
+.format-menu input[type="color"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-top: 7px;
+}
+
+.format-menu select {
+  background-color: var(--white);
+  color: var();
+  border: 2px solid rgb(111, 210, 147);
+  padding-top: 1px;
+  padding-bottom: 2px;
+  margin-top: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  width: auto;
+  height: 23px;
+  cursor: pointer;
+}
+
+.windowPopUp {
+  bottom: 0;
+  background-color: var(--popUp-color);
+  display: none;
+  flex-direction: column;
+  width: 96%;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 17%;
+  height: 50%;
+  margin-left: 8px;
+  justify-content: space-evenly;
+}
+.close-button-img {
+  width: 50px;
+}
+.close-button {
+  background: transparent;
+  border: none;
+}
+.dlbutton {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.text-input {
+  position: absolute;
+  top: 50px; /* Tu pourras ajuster la position */
+  left: 50px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #728657;
+  padding: 5px;
+  font-family: "myFont", sans-serif;
+  color: #333;
 }
