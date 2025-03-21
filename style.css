@@ -8,6 +8,8 @@
   --body-background: rgb(190, 240, 190);
   --text-outline: #728657;
   --popUp-color: rgb(111, 210, 147);
+  --boxshadow: #4f4537 2px 2px 5px;
+  --textcolor: black;
 }
 * {
   margin: 0;
@@ -152,9 +154,9 @@ footer p {
 }
 
 .text-zone {
-  border: 2px dashed #f5f4f3;
+  border: 2px dashed var(--white);
   background-color: transparent;
-  color: black;
+  color: var(--textcolor);
   padding: 5px 10px;
   cursor: move;
   min-width: 100px;
@@ -171,10 +173,10 @@ footer p {
 .format-menu {
   position: absolute;
   display: none;
-  background-color: rgb(111, 210, 147);
+  background-color: var(--popUp-color);
   padding: 2px;
   border-radius: 5px;
-  box-shadow: #4f4537 2px 2px 5px;
+  box-shadow: var(--boxshadow);
 }
 
 .format-menu button {
@@ -184,10 +186,6 @@ footer p {
   color: var(--btn-color);
   cursor: pointer;
   font-family: "myFont", sans-serif;
-}
-
-.format-menu button:hover {
-  color: rgb(94, 182, 94);
 }
 
 .format-menu input[type="color"] {
@@ -200,8 +198,8 @@ footer p {
 }
 
 .format-menu select {
-  background-color: whitesmoke;
-  color: black;
+  background-color: var(--white);
+  color: var();
   border: 2px solid rgb(111, 210, 147);
   padding-top: 1px;
   padding-bottom: 2px;
